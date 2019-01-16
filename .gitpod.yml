@@ -1,0 +1,6 @@
+tasks:
+  - before: source activation_venv
+    init: >
+        pip install torch &&
+        ./install_deps &&
+        pip install -U pytest pytest-cov
